@@ -92,7 +92,7 @@ namespace LiquidTemplateEvaluator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if(!LoadFiles())
+            if (!LoadFiles())
             {
                 LoadSampleFiles();
             }
@@ -149,7 +149,7 @@ namespace LiquidTemplateEvaluator
             if ((string.IsNullOrWhiteSpace(txtTemplateJson.Text) && string.IsNullOrWhiteSpace(txtDataJson.Text))
                             || MessageBox.Show("Are you sure to load/overwrite?") == DialogResult.OK)
             {
-                LoadFiles(Path.Combine("sampleData", lastUsedInputDataJsonFileName),
+                LoadFiles(Path.Combine("sampleData", lastUsedTemplateFileName),
                     Path.Combine("sampleData", lastUsedInputDataJsonFileName));
             }
         }
