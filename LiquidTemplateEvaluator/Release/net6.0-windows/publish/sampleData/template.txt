@@ -1,0 +1,12 @@
+
+{%if data.Name != null %}
+not null section
+{%elseif data.Name == 'One' %}
+First block
+{%else%}
+Else block
+{%endif%}
+
+id: {{data.id}}
+Name: {{data.Name}}
+
